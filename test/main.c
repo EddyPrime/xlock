@@ -16,7 +16,7 @@ int main()
     srand(time(NULL));
 
     /* constants */
-    unsigned int experiments = 100;
+    unsigned int experiments = 10000;
     unsigned int source_bytes = 8004;
     unsigned int pool_bytes = 32;
 

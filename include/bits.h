@@ -56,16 +56,16 @@
 /**
  * @brief Sets to 1 the value of bit in arr.
  */
-#define char_set_bit(arr, bit) (arr[(bit) / 8] = set_bit(arr[(bit) / 8], (bit) % 8))
+#define char_set_bit(arr, bit) ((arr)[(bit)/8] |= (1 << (bit)))
 
 /**
  * @brief Sets to 0 the value of bit in arr.
  */
-#define char_clear_bit(arr, bit) (arr[(bit) / 8] = clear_bit(arr[(bit) / 8], (bit) % 8))
+#define char_clear_bit(arr, bit) ((arr)[(bit)/8] &= ~(1 << (bit)))
 
 /**
  * @brief Flips the value of bit in arr.
  */
-#define char_toggle_bit(arr, bit) (arr[(bit) / 8] = toggle_bit(arr[(bit) / 8], (bit) % 8))
+#define char_toggle_bit(arr, bit) ((arr)[(bit)/8] ^= (1 << (bit)))
 
 #endif
