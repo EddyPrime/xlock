@@ -111,7 +111,7 @@ int main()
         change_random(source, read, source_bytes, e_abs);
         key2_seed = key1_seed;
 
-        res = gen(
+        res = rep(
             read, &source_seed, source_bits, vault,
             key2, &key2_seed, key_bits, key_pre_bits,
             &nonce, token, TOKEN_BYTES,
